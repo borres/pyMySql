@@ -12,7 +12,8 @@ and
 dbutils.py as in this repository
 """
 
-XSLT_FILE='tojson.xsl'       
+# as in this repository:
+XSLT_FILE='dbtojson.xsl'       
 
 form=cgi.FieldStorage()
 """
@@ -26,10 +27,10 @@ try:
     # always connect
     connect=form['connect'].value
     # set up parameters
-    p=utils.prepareDumpParameters(connect)
+    p=dbutils.prepareDumpParameters(connect)
     parts=connect.split('|')
     if len(p) > 0:                           
-        print utils.makeJson(p,'data/dump.xml',XSLT_FILE)
+        print dbutils.makeJson(p,'data/dump.xml',XSLT_FILE)
     else:
         print 'error bad parameter list in connect'
 except:
