@@ -1,15 +1,15 @@
 #! /usr/bin/python
 import cgi,sys
-import subprocess
+#import subprocess
 from lxml import etree
-import utils
+import dbutils
 #import cgitb; cgitb.enable()
 """
 Dump to json
 Server script producing json
 Using lxml from: http://lxml.de/
-and a subprocess as implemented in utils.py
-(this repository)
+and 
+dbutils.py as in this repository
 """
 
 XSLT_FILE='tojson.xsl'       
