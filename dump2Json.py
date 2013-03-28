@@ -6,7 +6,10 @@ import utils
 #import cgitb; cgitb.enable()
 """
 Dump to json
-using mysqldump in a subprocess as implemented in utils
+Server script producing json
+Using lxml from: http://lxml.de/
+and a subprocess as implemented in utils.py
+(this repository)
 """
 
 XSLT_FILE='tojson.xsl'       
