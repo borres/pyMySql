@@ -1,6 +1,5 @@
 #! /usr/bin/python
 import cgi,sys
-import subprocess
 import dbutils
 #import cgitb; cgitb.enable()
 """
@@ -19,7 +18,7 @@ try:
     # always connect
     connect=form['connect'].value
     # set up parameters
-    p=utils.prepareDumpParameters(connect)
+    p=dbutils.prepareDumpParameters(connect)
     if len(p) >0:
         res=dbutils.doProcess(p,'data/dump.xml')
         if res.startswith('ok'):
