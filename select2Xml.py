@@ -1,11 +1,11 @@
 #! /usr/bin/python
 import cgi,sys
-import subprocess
 import dbutils
 #import cgitb; cgitb.enable()
+
 """
 Select to XML
-using mysql in a subprocess as implemented in utils
+using mysql in a subprocess as implemented in dbutils
 """
 
 form=cgi.FieldStorage()
