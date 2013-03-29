@@ -1,7 +1,7 @@
 Python og MySql
 =========
 
-Assorted usefull python scripts for accessing MySQl 
+Assorted usefull Python scripts for accessing MySql 
 and producing XML and JSon
 
 
