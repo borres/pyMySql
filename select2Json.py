@@ -1,6 +1,5 @@
 #! /usr/bin/python
 import cgi,sys
-import subprocess
 from lxml import etree
 import dbutils
 #import cgitb; cgitb.enable()
@@ -10,7 +9,8 @@ using mysql in a subprocess as implemented in utils
 """
 
 
-XSLT_FILE='dbtojson.xsl'       
+# transform xml -> json
+XSLT_FILE='tojson.xsl'       
 
 form=cgi.FieldStorage()
 """
